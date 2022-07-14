@@ -1,11 +1,6 @@
 package hello.servlet.web.frontcontroller.v4;
 
-import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.MyView;
-import hello.servlet.web.frontcontroller.v3.ControllerV3;
-import hello.servlet.web.frontcontroller.v3.controller.MemberFormControllerV3;
-import hello.servlet.web.frontcontroller.v3.controller.MemberListControllerV3;
-import hello.servlet.web.frontcontroller.v3.controller.MemberSaveControllerV3;
 import hello.servlet.web.frontcontroller.v4.controller.MemberFormControllerV4;
 import hello.servlet.web.frontcontroller.v4.controller.MemberListControllerV4;
 import hello.servlet.web.frontcontroller.v4.controller.MemberSaveControllerV4;
@@ -19,7 +14,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(name = "frontControllerServletV3", urlPatterns = "/front-controller/v3/*")
+@WebServlet(name = "frontControllerServletV4", urlPatterns = "/front-controller/v4/*")
 public class FrontControllerServletV4 extends HttpServlet {
 
     private Map<String, ControllerV4> controllerMap = new HashMap<>();
